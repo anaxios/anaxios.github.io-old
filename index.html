@@ -509,7 +509,11 @@ Error message and password prompt
 
 <li>Edward Hooper</li>
 
+<li>Emacs</li>
+
 <li>Email</li>
+
+<li>Escape Sepcial Characters</li>
 
 <li>Eternal Pascha</li>
 
@@ -524,6 +528,8 @@ Error message and password prompt
 <li>Festial Matins</li>
 
 <li>Feynmen Technique</li>
+
+<li>Find and replace multiple files</li>
 
 <li>Fr Alexander Gumanovsky</li>
 
@@ -600,6 +606,8 @@ Error message and password prompt
 <li>Ladder of Divine Ascent</li>
 
 <li>Lambda Calculus</li>
+
+<li>LaTeX</li>
 
 <li>Lent</li>
 
@@ -744,6 +752,8 @@ Error message and password prompt
 <li>tab crm</li>
 
 <li>TASKS</li>
+
+<li>Text editors</li>
 
 <li>The Complete Ante-Nicene &amp; Nicene and Post-Nicene Church Fathers Collection</li>
 
@@ -12458,7 +12468,7 @@ exports.context = contextWidget;
 <div created="20200423200401447" modified="20200423210926655" title="$:/state/ShowPaletteEditor">
 <pre>no</pre>
 </div>
-<div created="20200418121802381" creator="Sophronios" modified="20200509062309951" modifier="Sophronios" title="$:/state/sidebar">
+<div created="20200418121802381" creator="Sophronios" modified="20200514095631201" modifier="Sophronios" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20200423135524613" modified="20200502164032606" title="$:/state/strollhometabs--312553599">
@@ -12539,7 +12549,7 @@ exports.context = contextWidget;
 <div bag="default" created="20200509031538388" creator="S" modified="20200509031541871" modifier="Sophronio" revision="1" title="$:/status/UserName">
 <pre>Sophronios</pre>
 </div>
-<div created="20200513015430581" creator="Sophronios" list="Hub" modified="20200513015436879" modifier="Sophronios" title="$:/StoryList">
+<div created="20200513015430581" creator="Sophronios" list="Hub" modified="20200514100040682" modifier="Sophronios" title="$:/StoryList">
 <pre></pre>
 </div>
 <div bag="default" created="20200127163609843" list="$:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200502175036997" revision="0" tags="stroll" title="$:/tags/EditToolbar" type="text/vnd.tiddlywiki">
@@ -12633,8 +12643,8 @@ exports.context = contextWidget;
 <div created="20200502174943975" modified="20200502174950301" title="$:/temp/RenameTags/search">
 <pre>tb</pre>
 </div>
-<div created="20200418122544376" creator="Sophronios" modified="20200513015427214" modifier="Sophronios" title="$:/temp/search">
-<pre>hoop</pre>
+<div created="20200418122544376" creator="Sophronios" modified="20200513192755570" modifier="Sophronios" title="$:/temp/search">
+<pre></pre>
 </div>
 <div created="20200429214841632" modified="20200429214841632" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html" url="https://tiddlywiki.com/library/v5.1.22/index.html">
 <pre>loaded</pre>
@@ -13134,8 +13144,39 @@ Loc 6653
 <div created="20200513015415905" creator="Sophronios" modified="20200513015415905" modifier="Sophronios" title="Edward Hooper">
 <pre></pre>
 </div>
+<div created="20200514100029700" creator="Sophronios" modified="20200514100048082" modifier="Sophronios" tags="Hub" title="Emacs">
+<pre></pre>
+</div>
 <div created="20200506001659465" creator="sophronios" modified="20200506001659465" modifier="sophronios" title="Email" tmap.id="386abd1b-feb0-4395-a1b3-3fa952434237">
 <pre></pre>
+</div>
+<div created="20200514094622502" creator="Sophronios" modified="20200514095420797" modifier="Sophronios" tags="" title="Escape Sepcial Characters">
+<pre>In [[LaTeX]] there are 10 special characters:
+
+# $ % &amp; \ ^ _ { } ~
+
+Most of them can be escaped prepending a simple backslash, but \, ^ and ~ need special treatment:
+
+    for backslash (\) use \textbackslash{}
+    for caret (^) use \^{} or \textasciicircum{}
+    and for tilde (~) use \~{} or \textasciitilde{}
+
+''In short:''
+
+| To get	| You must use|h
+| # | \# |
+| $ | \$ |
+| % | \% |
+| &amp; | \&amp; |
+| \ | \textbackslash{} |
+| ^ | \textasciicircum{} |
+| _ | \_ |
+| { | \{ |
+| } | \} |
+| ~ | \textasciitilde{} |
+| &gt; | \greaterthan{} |
+| &lt; | \lessthan{} |
+| ¿ | \textquestiondown{} |</pre>
 </div>
 <div created="20200506014935571" creator="sophronios" modified="20200506015021392" modifier="sophronios" tags="" title="Eternal Pascha" tmap.id="f24a4962-6d75-4ea5-a5c2-abb3c602285c">
 <pre>[[Poetry]] | [[Haiku]]
@@ -13585,6 +13626,17 @@ sleep at all.</pre>
 # Discover the ideas that are not understood 
 # Go back to reference material and relearn
 # Simplify and clarify and wordy or confusing language or create an analogy to describe idea</pre>
+</div>
+<div created="20200514095633229" creator="Sophronios" modified="20200514100029697" modifier="Sophronios" tags="" title="Find and replace multiple files">
+<pre>[[Emacs]] | [[Text editors]]
+
+ #   ''M-x find-name-dired'': you will be prompted for a root directory and a filename pattern.
+#    Press ''t'' to &quot;toggle mark&quot; for all files found.
+#    Press ''Q'' for &quot;Query-Replace in Files...&quot;: you will be prompted for query/substitution regexps.
+#    Proceed as with query-replace-regexp: ''y'' to replace and move to next match, ''n'' to skip a match, ''Y'' to replace all, etc.
+ #   Press ''C-x s'' to save buffers. (You can then press ''y, n'' or ''!'' to save all at once)
+
+</pre>
 </div>
 <div created="20200506013728299" creator="sophronios" modified="20200506013728299" modifier="sophronios" title="Fr Alexander Gumanovsky" tmap.id="7e98491a-046a-4bc2-89d7-51dead9bf265">
 <pre></pre>
@@ -14180,6 +14232,9 @@ Lambda calculus
 Discovered not invented
 
 The Creator's mind</pre>
+</div>
+<div created="20200514095202471" creator="Sophronios" modified="20200514095224897" modifier="Sophronios" tags="Hub" title="LaTeX">
+<pre></pre>
 </div>
 <div created="20200506010621182" creator="sophronios" modified="20200506010621182" modifier="sophronios" title="Lent" tmap.id="9f5fa528-7dd7-419c-aa64-5882943d881b">
 <pre></pre>
@@ -15202,6 +15257,9 @@ Tweaks &amp; hacks for [[TiddlyWiki]]
 &lt;/$checkbox&gt;
 &lt;br&gt;
 &lt;/$list&gt;</pre>
+</div>
+<div created="20200514100029703" creator="Sophronios" modified="20200514100029703" modifier="Sophronios" title="Text editors">
+<pre></pre>
 </div>
 <div created="20200507042835080" creator="sophronios" modified="20200507042835080" modifier="sophronios" title="The Complete Ante-Nicene &amp; Nicene and Post-Nicene Church Fathers Collection" tmap.id="b6485a98-5806-4715-9400-4fbdc9545589">
 <pre></pre>
