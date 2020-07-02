@@ -13327,7 +13327,7 @@ exports.context = contextWidget;
 <div bag="default" created="20200509031538388" creator="S" modified="20200509031541871" modifier="Sophronio" revision="1" title="$:/status/UserName">
 <pre>Sophronios</pre>
 </div>
-<div list="Prologue Hub" title="$:/StoryList">
+<div created="20200702094814771" creator="Sophronios" list="Prologue Hub" modified="20200702094814771" modifier="Sophronios" title="$:/StoryList">
 <pre></pre>
 </div>
 <div bag="default" created="20200127163609843" list="$:/jd/fullscreen-editor/EditButton $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200502175036997" revision="0" tags="stroll" title="$:/tags/EditToolbar" type="text/vnd.tiddlywiki">
@@ -15861,7 +15861,7 @@ The longer version of the Hail Mary was unknown in the first millennium of Chris
 
 [[https://youtu.be/ljyo_WAJevQ]]</pre>
 </div>
-<div created="20200505145820050" creator="sophronios" modified="20200509063841786" modifier="Sophronios" tags="" title="Hub" tmap.id="037b1ee0-dc13-42fc-a728-044ac7b4c604">
+<div created="20200505145820050" creator="sophronios" modified="20200702094813268" modifier="Sophronios" tags="" title="Hub" tmap.id="037b1ee0-dc13-42fc-a728-044ac7b4c604">
 <pre>@@background-color: MintCream;
 @@border: 1px solid whiteSmoke;
 @@text-align: left;
@@ -15872,6 +15872,9 @@ The longer version of the Hail Mary was unknown in the first millennium of Chris
 &lt;$list  filter=&quot;[!has[draft.of]tag[task]!tag[done]sort[created]]&quot;&gt;&lt;$checkbox tag=&quot;done&quot;&gt; &lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/$checkbox&gt;&lt;br&gt;&lt;/$list&gt;
 @@
 
+&lt;$list filter=&quot;[prefix[Synaxarion -]days:created[-14]sort[created]first[]]&quot;&gt;
+&lt;$link to={{!!title}}&gt;Prologue for Today&lt;br&gt;&lt;/$link&gt;
+&lt;/$list&gt;
 
 @@width: 50%;
 |^ [[Zettelkasten]] |^ [[Shortcuts]] |h
@@ -16825,8 +16828,8 @@ preparing the soul</pre>
 
 &lt;/$list&gt;</pre>
 </div>
-<div created="20200702084220823" creator="Sophronios" modified="20200702084245513" modifier="Sophronios" tags="" title="Prologue">
-<pre>&lt;$list filter=&quot;[prefix[Synaxarion -]sort[osdate]]&quot;&gt;
+<div created="20200702084220823" creator="Sophronios" modified="20200702094825611" modifier="Sophronios" tags="" title="Prologue">
+<pre>&lt;$list filter=&quot;[prefix[Synaxarion -]sort[created]]&quot;&gt;
 &lt;$link to={{!!title}}&gt; &lt;$view field=title /&gt;&lt;br&gt;&lt;/$link&gt;
 &lt;/$list&gt;</pre>
 </div>
